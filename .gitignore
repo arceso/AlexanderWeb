@@ -66,5 +66,6 @@ typings/
 # Serverless directories
 .serverless
 
-# VSCode
+# Others
 .vscode
+package-lock.json
