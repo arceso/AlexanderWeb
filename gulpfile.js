@@ -12,14 +12,14 @@ gulp.task('default', ['browserSync'], function() {
   gulp.watch(sassPath, ['sass']);
 });
 
-gulp.task('sass', ['browserSync'], function() {
-  gulp.src(sassPath) 
+gulp.task('sass', function() {
+  gulp.src(sassPath)
     .pipe(sass({outputStyle: 'nested'}).on('error', sass.logError))
     .pipe(rename('style.css'))
     .pipe(gulp.dest(deployPath))
-    .pipe(browserSync.reload({stream: true}))
+    .pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('browserSync', function() {
-  browserSync.init({server: { baseDir: deployPath } })
+  browserSync.init({server: { baseDir: deployPath } });
 })

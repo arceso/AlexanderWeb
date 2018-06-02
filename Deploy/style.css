@@ -1,0 +1,82 @@
+.c-slider {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative; }
+  .c-slider__title {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    padding: 50px 0;
+    font-family: 'Alfa Slab One'; }
+  .c-slider__title-fragments {
+    top: 50px;
+    font-size: calc((95vh - 200px) / 8);
+    display: inline-block;
+    transform: translateX(-40%);
+    color: white; }
+  .c-slider__title-fragment {
+    display: block; }
+  .c-slider__image {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1; }
+  .c-slider__foggy-scroll {
+    height: 200vh;
+    position: absolute; }
+
+.c-general-previews {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden; }
+  .c-general-previews__card {
+    height: 500px; }
+    .c-general-previews__card:nth-child(1) {
+      background-color: red; }
+    .c-general-previews__card:nth-child(2) {
+      background-color: purple; }
+    .c-general-previews__card:nth-child(3) {
+      background-color: blue; }
+    .c-general-previews__card:nth-child(4) {
+      background-color: green; }
+    .c-general-previews__card:nth-child(1) {
+      background-image: url("https://loremflickr.com/320/240");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transform: translateZ(0px) scale(1);
+      z-index: 4; }
+    .c-general-previews__card:nth-child(2) {
+      background-image: url("https://loremflickr.com/320/240");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transform: translateZ(-300px) scale(2);
+      z-index: 3; }
+    .c-general-previews__card:nth-child(3) {
+      background-image: url("https://loremflickr.com/320/240");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transform: translateZ(-600px) scale(3);
+      z-index: 2; }
+    .c-general-previews__card:nth-child(4) {
+      background-image: url("https://loremflickr.com/320/240");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transform: translateZ(-900px) scale(4);
+      z-index: 1; }
+    .c-general-previews__card:nth-child(5) {
+      background-image: url("https://loremflickr.com/320/240");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transform: translateZ(-1200px) scale(5);
+      z-index: 0; }

@@ -6,6 +6,8 @@
   "dependencies": {
     "browser-sync": "^2.24.4",
     "gulp": "^3.9.1",
+    "gulp-cli": "^2.0.1",
+    "gulp-nunjucks": "^4.0.0",
     "gulp-rename": "^1.2.3",
     "gulp-sass": "^4.0.1",
     "npm": "^6.1.0"
