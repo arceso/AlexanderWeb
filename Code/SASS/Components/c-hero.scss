@@ -1,0 +1,74 @@
+.c-hero {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    &__background-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+        z-index: $zIndexBottom;
+        filter: brightness(0.85);
+    }
+
+    &__background-blur {
+        width: calc(33.33% + 12px);
+        position: absolute;
+        left: -6px;
+        top: -6px;
+        height: calc(100% + 12px);
+        overflow: hidden;
+    }
+    &__background-blur > &__background-img  { 
+        filter: blur(6px) brightness(0.85);
+        width: calc(100vw + 12px);
+        height: calc(100vh + 12px);
+    }
+
+    &__texts {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    &__text-wrap {
+        width: 100%;
+        border-bottom: 3px solid $colorWhite;
+        margin-bottom: 30px;
+    }
+
+    &__text,
+    &__icon {
+        color: $colorWhite;
+    }
+
+    &__text {
+        font-size: 45px;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    &__icon {
+        float: right;
+        font-size: 30px;
+        margin-top: 15px;
+        margin-right: 5px;
+    }
+
+    &__scroll-down {
+        fill: $colorWhite;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
