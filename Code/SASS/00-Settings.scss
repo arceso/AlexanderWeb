@@ -1,3 +1,4 @@
+// Main Web Colors
 $colorPrimary: #48A0E2;
 $colorSecondary: #FF0652;
 $colorWhite: #FFFFFF;
@@ -5,6 +6,19 @@ $colorBlack: #4e4e4e;
 $colorBackgroundWhite: #E5E5E5;
 $colorBackgroundBlack: #232227;
 
+// Branding
+$colorTwitter: #00aced;
+$colorYoutube:  #c4302b;
+$colorFacebook: #3b5998;
+$colorWhatsapp: #25d366;
+$colorPinterest: #c92228;
+$colorGithub: #333;
+$colorInstagram: #cd486b;
+
+//BECAUSE OF FUCK BRANDING: 
+$colorBrands: #3e3a4e;
+
+//Z-Index:
 $zIndexBehind: -1;
 $zIndexBottom: 0;
 $zIndexLow: 1;
@@ -13,7 +27,7 @@ $zIndexHigh: 3;
 $zIndexTop: 4;
 $zIndexMax: 5;
 
-
+//Break Points: 
 $screenXL: 768px;
 $screenSM: 992px;
 $screenMD: 1024px;
