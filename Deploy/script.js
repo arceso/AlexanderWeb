@@ -1,6 +1,7 @@
 
 $(function() {
     initCarousel();
+    makeThumbnailClickStartVideo();
 });
 
 
@@ -14,4 +15,11 @@ function initCarousel() {
         fade: true,
         cssEase: 'linear'
       });
+}
+
+function makeThumbnailClickStartVideo() {
+    $('.c-video__button, .c-video__element-img').click(function(){
+        $('.c-video__button, .c-video__element-img').fadeOut();
+        $f($('.c-video__element > iframe')[0]).api("play");
+    });
 }

@@ -1,6 +1,6 @@
 .c-gallery {
     background-color: $colorBackgroundWhite;
-    padding: 50px 15px;
+    padding: 50px 15px 0;
     position: relative;
     overflow: hidden;
     
@@ -46,7 +46,7 @@
         width: 100%;
         height: 75px;
         overflow: hidden;
-        background-color: #e5e5e5;
+        background-color: $colorBackgroundBlack;
     }
     
     &__element-img-blurr > &__element-img {
