@@ -6,12 +6,12 @@
     
     &__deformed-background {
         position: absolute;
-        width: 1250px;
-        height: 2000px;
+        height: 150%;
+        width: 150%;
+        right: -50%;
+        bottom: -80%;
+        transform: rotate(-15deg) translate(0%);
         background-color: $colorBackgroundBlack;
-        top: -70px;
-        left: -100px;
-        transform: rotate(66deg) translate(0%);
         border: 30px solid $colorPrimary;
     }
 

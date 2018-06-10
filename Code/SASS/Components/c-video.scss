@@ -8,10 +8,10 @@
         position: absolute;
         height: 150%;
         width: 150%;
-        background-color: $colorBackgroundWhite;
         right: -50%;
-        bottom: -100%;
-        transform: rotate(-20deg) translate(0%);
+        bottom: -80%;
+        transform: rotate(-15deg) translate(0%);
+        background-color: $colorBackgroundWhite;
         border: 30px solid $colorSecondary;
     }
 
@@ -57,5 +57,16 @@
     }
 
 
-    
+    @media (min-width: $screenXS) {
+        &__element {  height: $screenXS / 1.77777777; }
+    }
+    @media (min-width: $screenSM) {
+        &__element {  height: $screenSM / 1.77777777; }
+    }
+    @media (min-width: $screenMD) {
+        &__element {  height: $screenMD / 1.77777777; }
+    }
+    @media (min-width: $screenLG) {
+        &__element {  height: $screenLG / 1.77777777; }
+    }
 }
