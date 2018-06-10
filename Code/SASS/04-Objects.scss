@@ -1,9 +1,11 @@
 .o-container {
-    @media (min-width: 576px) {  max-width: 576px; }
+    margin: 0 auto;
+
+    @media (min-width: $screenXS) {  max-width: $screenXS; }
     
-    @media (min-width: 768px) {  max-width: 768px; }
+    @media (min-width: $screenSM) {  max-width: $screenSM; }
     
-    @media (min-width: 992px) {  max-width: 992px; }
+    @media (min-width: $screenMD) {  max-width: $screenMD; }
     
-    @media (min-width: 1200px) {  max-width: 1200px; }
+    @media (min-width: $screenLG) {  max-width: $screenLG; }
 }
