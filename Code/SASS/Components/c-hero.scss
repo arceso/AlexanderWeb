@@ -1,6 +1,6 @@
 .c-hero {
     width: 100vw;
-    height: 100vh;
+    height: 550px;
     position: relative;
     overflow: hidden;
 
@@ -9,7 +9,7 @@
         top: 0;
         left: 0;
         width: 100vw;
-        height: 100vh;
+        height: 550px;
         object-fit: cover;
         object-position: center;
         z-index: $zIndexBottom;
@@ -27,7 +27,7 @@
     &__background-blur > &__background-img  { 
         filter: blur(6px) brightness(0.85);
         width: calc(100vw + 12px);
-        height: calc(100vh + 12px);
+        height: calc(550px + 12px);
     }
 
     &__texts {

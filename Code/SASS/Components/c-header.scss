@@ -21,11 +21,15 @@
 
   &__menu-icon {
     font-size: 25px;
-    color: $colorPrimary;
+    color: $colorSecondary;
   }
 
   &__name {
-    font-weight: 900;
+    width: 120px;
+    margin: -10px 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
   }
 
   &__bottom-border {
