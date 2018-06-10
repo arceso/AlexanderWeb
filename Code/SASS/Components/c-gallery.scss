@@ -4,13 +4,13 @@
     position: relative;
     overflow: hidden;
     
-    &__deformed-background{
+    &__deformed-background {
         position: absolute;
-        width: 530px;
-        height: 200vh;
-        background-color: $colorBlack;
-        top: calc(-200px + 20%);
-        left: 200px;
+        width: 1250px;
+        height: 2000px;
+        background-color: $colorBackgroundBlack;
+        top: -70px;
+        left: -100px;
         transform: rotate(66deg) translate(0%);
         border: 30px solid $colorPrimary;
     }
@@ -96,6 +96,7 @@
         justify-content: space-evenly;
         align-items: center;
         height: 100%;
+        display: none;
     }
 
     &__element-index-mark {
