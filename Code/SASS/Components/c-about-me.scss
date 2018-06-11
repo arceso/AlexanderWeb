@@ -1,0 +1,32 @@
+.c-about-me {
+    background-color: $colorBackgroundWhite;
+    padding: 50px 15px 0;
+    position: relative;
+    overflow: hidden;
+
+    &__title {
+        font-size: 40px;
+        font-weight: 700;
+        box-shadow: 0px 1px 0 0 $colorPrimary, 0px 2px 0 0 $colorBlack;
+        margin-bottom: 15px;
+        > h2 {
+            color: $colorBlack;
+            text-align: left;
+        }
+    }
+
+    &__wall-of-text {
+        font-size: 17px;
+        letter-spacing: 1.25px;
+        line-height: 1.25;
+        > p { margin-bottom: 15px; }
+    }
+
+    &__pdf-icon { color: $colorSecondary; }
+    &__pdf-text { 
+        cursor: pointer;
+        color: $colorPrimary; 
+        text-decoration: underline;
+    }
+
+}

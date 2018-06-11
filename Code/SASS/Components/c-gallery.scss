@@ -9,7 +9,7 @@
         height: 150%;
         width: 150%;
         right: -50%;
-        bottom: -80%;
+        bottom: -90%;
         transform: rotate(-15deg) translate(0%);
         background-color: $colorBackgroundBlack;
         border: 30px solid $colorPrimary;
@@ -111,11 +111,28 @@
         }
     }
 
+    &__collage { display: none; }
+
     @media (min-width: $screenSM) {
-        &__carousel { 
-            height: 550px;
-            width: 400px; 
-            display: inline-block;
+        &__carousel { display: none; }
+        
+        &__collage { 
+            display: block;
+            margin: -15px; 
         }
+
+        &__element {
+            position: relative;
+            float: left;
+            margin: 15px;
+            width: calc(25% - 30px);
+            height: 400px;
+            box-shadow: 0 0 33px 0px #00000080;
+            overflow: hidden;
+        }
+
+        &__element &__element-img { transition: linear all .333s; }
+        
+        &__element:hover &__element-img { transform: scale(1.2); }
     }
 }

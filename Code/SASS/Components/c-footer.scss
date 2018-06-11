@@ -1,0 +1,30 @@
+.c-footer {
+    position: relative;
+    overflow: hidden;
+    margin-top: -100px;
+    height: 250px;
+    z-index: $zIndexBehind;
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 250%;
+        width: 150%;
+        right: -43%;
+        bottom: -250%;
+        transform: rotate(-15deg) translate(0%);
+        background-color: $colorBackgroundBlack;
+        border: 30px solid $colorSecondary;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        height: 259%;
+        width: 150%;
+        left: -48%;
+        bottom: -250%;
+        transform: rotate(15deg) translate(0%);
+        background-color: $colorBackgroundBlack;
+        border: 30px solid $colorPrimary;
+    }
+}
